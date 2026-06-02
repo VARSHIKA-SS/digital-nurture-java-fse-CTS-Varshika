@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style Showcase - Local Community Event Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="navbar-brand">Style Showcase</div>
+      <ul class="nav-list">
+        <li><a class="nav-link active" href="#grid">Grid</a></li>
+        <li><a class="nav-link" href="#buttons">Buttons</a></li>
+        <li><a class="nav-link" href="#forms">Forms</a></li>
+        <li><a class="nav-link" href="#cards">Cards</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <section id="grid" class="mb-5">
+      <h2 class="display-5 fw-bold">Grid System</h2>
+      <p class="lead text-muted">Responsive containers and column layouts using custom CSS.</p>
+      <div class="container border rounded p-3 mb-4">
+        <div class="row g-4">
+          <div class="col bg-primary text-white p-4 rounded">Three-column layout</div>
+          <div class="col bg-success text-white p-4 rounded">Column 2</div>
+          <div class="col bg-warning text-dark p-4 rounded">Column 3</div>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 bg-light border p-4">Sidebar</div>
+        <div class="col-lg-8 bg-white border p-4">Main content area</div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-4 g-4 mt-4">
+        <div class="col"><div class="p-3 bg-secondary text-white rounded">Equal width 1</div></div>
+        <div class="col"><div class="p-3 bg-secondary text-white rounded">Equal width 2</div></div>
+        <div class="col"><div class="p-3 bg-secondary text-white rounded">Equal width 3</div></div>
+        <div class="col"><div class="p-3 bg-secondary text-white rounded">Equal width 4</div></div>
+      </div>
+    </section>
+
+    <section id="alignment" class="mb-5">
+      <h2 class="display-6 fw-bold">Alignment &amp; Flex Utilities</h2>
+      <div class="d-flex justify-content-center align-items-center bg-light border rounded p-4 mb-3" style="min-height: 120px;">
+        <div class="text-center">
+          <p class="fw-bold">Centered layout with flex utilities</p>
+          <p class="text-muted">Custom CSS uses flexbox to center content.</p>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between align-items-center bg-dark text-white rounded px-4 py-3">
+        <span>Brand</span>
+        <span>Navigation</span>
+      </div>
+    </section>
+
+    <section id="buttons" class="mb-5">
+      <h2 class="display-6 fw-bold">Buttons</h2>
+      <div class="mb-3">
+        <button class="btn btn-primary me-2">Primary</button>
+        <button class="btn btn-secondary me-2">Secondary</button>
+        <button class="btn btn-success me-2">Success</button>
+        <button class="btn btn-warning me-2">Warning</button>
+      </div>
+      <div class="mb-3">
+        <button class="btn btn-outline-primary me-2">Outline Primary</button>
+        <button class="btn btn-outline-secondary me-2">Outline Secondary</button>
+      </div>
+      <div class="btn-group mt-3">
+        <button class="btn btn-info">Group 1</button>
+        <button class="btn btn-info">Group 2</button>
+        <button class="btn btn-info">Group 3</button>
+      </div>
+    </section>
+
+    <section id="forms" class="mb-5">
+      <h2 class="display-6 fw-bold">Forms</h2>
+      <form class="row g-4">
+        <div class="col-md-4">
+          <input type="text" class="form-control" placeholder="Form control">
+        </div>
+        <div class="col-md-4">
+          <div class="input-group">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="Username">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-floating">
+            <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+            <label for="floatingEmail">Email address</label>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkExample">
+            <label class="form-check-label" for="checkExample">Check this box</label>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section id="cards" class="mb-5">
+      <h2 class="display-6 fw-bold">Cards &amp; Media Layout</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card shadow-sm border-primary">
+            <img src="images/profile.svg" class="card-img-top" alt="Profile image">
+            <div class="card-body">
+              <h5 class="card-title">Profile Card</h5>
+              <p class="card-text">A custom card layout with title and text.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm border-success">
+            <div class="card-body">
+              <h5 class="card-title">Card Title</h5>
+              <p class="card-text">Demonstrating card body structure with CSS.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex align-items-start gap-3 mt-4">
+        <div class="bg-primary text-white rounded-circle p-4">UI</div>
+        <div>
+          <h5 class="mt-0">Media object style layout</h5>
+          <p class="mb-0 text-muted">A simple media-style content block styled with custom CSS.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="utilities" class="mb-5">
+      <h2 class="display-6 fw-bold">Utility Styles</h2>
+      <div class="bg-danger text-white bg-gradient p-4 rounded mb-3">Background and text utilities with custom CSS.</div>
+      <div class="border border-primary border-3 rounded-pill p-3 mb-3">Borders and pill shapes are handled in CSS.</div>
+      <div class="shadow-lg p-3 mb-3">Shadow utility example.</div>
+      <div class="position-relative border rounded p-4 mb-3" style="min-height:120px;">
+        <div class="position-absolute bottom-0 start-0 bg-dark text-white px-3 py-2 rounded">Position utility example</div>
+      </div>
+      <div class="d-none d-md-block p-3 bg-light border rounded mb-2">Visible at medium screen widths and above.</div>
+      <div class="d-lg-flex gap-3 p-3 bg-white border rounded">
+        <div class="p-2 bg-primary text-white rounded">Flex item 1</div>
+        <div class="p-2 bg-secondary text-white rounded">Flex item 2</div>
+      </div>
+    </section>
+
+    <section id="plugins" class="mb-5">
+      <h2 class="display-6 fw-bold">Plain JS &amp; CSS Plugins</h2>
+      <div class="card p-4 mb-3">
+        <h3 class="card-title">Modal lookalike</h3>
+        <p class="card-text">Modal and accordion examples are represented as styled static sections for a lightweight site layout.</p>
+      </div>
+      <div class="card p-4">
+        <h3 class="card-title">Accordion style</h3>
+        <p class="card-text">A custom content panel shows how accordion-style blocks can be styled with CSS.</p>
+      </div>
+    </section>
+
+    <a href="index.html" class="btn btn-primary">Back to portal</a>
+  </main>
+</body>
+</html>
