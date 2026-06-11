@@ -1,266 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Local Community Event Portal</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
 
-  <style>
-    /* Internal feature highlight styling for the portal */
-    #feature-highlight {
-      background: rgba(255, 255, 255, 0.80);
-      border: 1px dashed #2c3e50;
-      padding: 1rem;
-      margin-bottom: 1.5rem;
-      border-radius: 12px;
-    }
-  </style>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Local Community Event Portal</title>
+
+    <link rel="stylesheet"
+          href="styles.css">
+
 </head>
+
 <body>
-  <header class="bg-primary text-white py-4 position-relative" id="top-banner">
-    <div class="container d-flex justify-content-between align-items-center">
-      <div>
-        <h1 class="display-1 fw-bold text-uppercase">Local Community Events</h1>
-        <p class="lead text-white text-capitalize">Discover nearby meetups, volunteer projects, and workshops in your neighborhood.</p>
-      </div>
-      <a href="#register" class="btn btn-light btn-lg">Reserve Your Spot</a>
-    </div>
-  </header>
 
-  <nav class="navbar sticky-top">
-    <div class="container d-flex justify-content-between align-items-center">
-      <div class="navbar-brand">Community Events</div>
-      <ul class="nav-list">
-        <li><a class="nav-link active" href="#about">Home</a></li>
-        <li><a class="nav-link" href="#gallery">Events</a></li>
-        <li><a class="nav-link" href="#register">Register</a></li>
-        <li><a class="nav-link" href="#feedback">Feedback</a></li>
-        <li><a class="nav-link" href="#map-section">Location</a></li>
-      </ul>
-      <form class="search-form" role="search">
-        <input class="search-input" type="search" placeholder="Search upcoming events" aria-label="Search events">
-        <button class="btn btn-light btn-sm" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
+    <!-- Nav -->
 
-  <main class="container my-5">
-    <section id="about" class="mb-5">
-      <div class="row gy-4">
-        <div class="col-lg-8">
-          <article class="p-4 rounded shadow-sm bg-white">
-            <h2 class="text-primary">A Hub for Local Gatherings</h2>
-            <p class="text-muted">Join the community for workshops, volunteer days, music nights, and neighborhood meetups.</p>
-            <p class="fs-5" style="color: #6f42c1;">Featured event: Neighborhood block party with live music and family activities.</p>
-            <div id="feature-highlight">
-              <strong>Member highlight:</strong> Check the latest event announcements and register before spots fill up.
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                Community Portal
             </div>
-          </article>
-        </div>
-        <aside class="col-lg-4">
-          <div class="card border-primary shadow-sm mb-4">
-            <img src="images/event1.svg" class="card-img-top" alt="Community meeting illustration">
-            <div class="card-body">
-              <h3 class="card-title">Community Meetups</h3>
-              <p class="card-text">Use custom card styling and a profile-style layout to display event information.</p>
+
+            <ul>
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#events">Events</a>
+                </li>
+
+                <li>
+                    <a href="#register">Register</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+                <li>
+                    <a href="help.html"
+                       target="_blank">
+                        Help
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Main -->
+
+    <main>
+
+        <section id="home"
+                 class="hero">
+
+            <div id="welcomeBanner">
+
+                Welcome to Community Portal
+
+                <span style="color:red;font-weight:bold;">
+                    Free Registration Offer!
+                </span>
+
             </div>
-          </div>
-          <div class="card border-success shadow-sm">
-            <div class="card-body">
-              <h3 class="card-title">Local Resources</h3>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Volunteer signup</li>
-                <li class="list-group-item">Venue details</li>
-                <li class="list-group-item">News updates</li>
-              </ul>
+
+            <h1 id="mainHeader">
+                Local Community Event Portal
+            </h1>
+
+            <p class="highlight">
+
+                Register for workshops,
+                sports events, exhibitions
+                and community festivals.
+
+            </p>
+
+        </section>
+
+        <section id="events">
+
+            <h2>Community Event Gallery</h2>
+
+            <div class="gallery">
+
+                <div class="galleryCard">
+
+                    <img src="img/mc.jpg"
+                         alt="Music Event"
+                         title="Music Event"
+                         class="eventImage"
+                         ondblclick="enlargeImage(this)">
+
+                    <h3>Music Festival</h3>
+
+                    <p>Live music and entertainment.</p>
+
+                </div>
+
+                <div class="galleryCard">
+
+                    <img src="img/sports.jpg"
+                         alt="Sports Event"
+                         title="Sports Event"
+                         class="eventImage"
+                         ondblclick="enlargeImage(this)">
+
+                    <h3>Sports Meet</h3>
+
+                    <p>Fun sports competitions.</p>
+
+                </div>
+
+                <div class="galleryCard">
+
+                    <img src="img/workshop.jpg"
+                         alt="Workshop"
+                         title="Workshop"
+                         class="eventImage"
+                         ondblclick="enlargeImage(this)">
+
+                    <h3>Workshop</h3>
+
+                    <p>Learn practical skills.</p>
+
+                </div>
+
+                <div class="galleryCard">
+
+                    <img src="img/dance.jpg"
+                         alt="Dance Event"
+                         title="Dance Event"
+                         class="eventImage"
+                         ondblclick="enlargeImage(this)">
+
+                    <h3>Dance Show</h3>
+
+                    <p>Cultural dance performances.</p>
+
+                </div>
+
+                <div class="galleryCard">
+
+                    <img src="img/ff.jpg"
+                         alt="Food Festival"
+                         title="Food Festival"
+                         class="eventImage"
+                         ondblclick="enlargeImage(this)">
+
+                    <h3>Food Festival</h3>
+
+                    <p>Traditional and modern cuisine.</p>
+
+                </div>
+
+                <div class="galleryCard">
+
+                    <img src="img/art.jpg"
+                         alt="Art Exhibition"
+                         title="Art Exhibition"
+                         class="eventImage"
+                         ondblclick="enlargeImage(this)">
+
+                    <h3>Art Exhibition</h3>
+
+                    <p>Display of local artworks.</p>
+
+                </div>
+
             </div>
-          </div>
-        </aside>
-      </div>
-    </section>
 
-    <section id="gallery" class="mb-5">
-      <h2 class="text-uppercase">Event Gallery</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <figure class="col">
-          <img src="images/event1.svg" class="img-fluid rounded" alt="Garden fair illustration">
-          <figcaption class="mt-2 text-muted">Garden Festival, Saturday morning.</figcaption>
-        </figure>
-        <figure class="col">
-          <img src="images/event2.svg" class="img-fluid rounded" alt="Outdoor concert illustration">
-          <figcaption class="mt-2 text-muted">Music Concert with local artists.</figcaption>
-        </figure>
-        <figure class="col">
-          <img src="images/event3.svg" class="img-fluid rounded" alt="Volunteer team illustration">
-          <figcaption class="mt-2 text-muted">Volunteer team planning session.</figcaption>
-        </figure>
-      </div>
-    </section>
+        </section>
 
-    <section id="register" class="mb-5">
-      <h2 class="text-uppercase">Registration Form</h2>
-      <form id="registrationForm" class="bg-light p-4 rounded shadow-sm" novalidate>
-        <div class="row g-3">
-          <div class="col-md-6">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" id="name" class="form-control" required>
-            <div class="invalid-feedback">Please enter your name.</div>
-          </div>
-          <div class="col-md-6">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" id="email" class="form-control" required>
-            <div class="invalid-feedback">Please enter a valid email.</div>
-          </div>
-          <div class="col-md-6">
-            <label for="eventType" class="form-label">Event Type</label>
-            <select id="eventType" class="form-select form-control" required>
-              <option value="">Choose an event</option>
-              <option value="community">Community Meetup</option>
-              <option value="cleanup">Park Cleanup</option>
-              <option value="workshop">Creative Workshop</option>
-            </select>
-            <div class="invalid-feedback">Please choose an event type.</div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-floating">
-              <input type="date" id="eventDate" class="form-control" placeholder=" " required>
-              <label for="eventDate">Preferred date</label>
+        <section id="register">
+
+            <h2>Event Registration</h2>
+
+            <form id="registerForm">
+
+                <input type="text"
+                       name="name"
+                       placeholder="Enter Name"
+                       required
+                       autofocus>
+
+                <input type="email"
+                       name="email"
+                       placeholder="Enter Email"
+                       required>
+
+                <input type="text"
+                       id="phone"
+                       placeholder="Phone Number"
+                       onblur="validatePhone()">
+
+                <input type="date"
+                       required>
+
+                <select id="eventType"
+                        onchange="showFee()">
+
+                    <option value="">
+                        Select Event
+                    </option>
+
+                    <option value="Music">
+                        Music
+                    </option>
+
+                    <option value="Workshop">
+                        Workshop
+                    </option>
+
+                    <option value="Sports">
+                        Sports
+                    </option>
+
+                </select>
+
+                <p id="feeDisplay"></p>
+
+               <textarea id="feedback"
+          placeholder="Enter Feedback"
+          oninput="countCharacters()">
+</textarea>
+
+                <p>
+                    Characters :
+                    <span id="charCount">0</span>
+                </p>
+
+                <button type="submit"
+                        id="registerBtn"
+                        onclick="showConfirmation()">
+
+                    Register
+
+                </button>
+
+                <br><br>
+
+                <output id="outputMessage"></output>
+
+            </form>
+
+        </section>
+
+        <section id="video">
+
+            <h2>Event Promo Video</h2>
+
+            <video controls
+                   width="500"
+                   oncanplay="videoReady()">
+
+                <source src="videos/promo.mp4"
+                        type="video/mp4">
+
+            </video>
+
+            <p id="videoMessage"></p>
+
+        </section>
+
+        <section id="locationSection">
+
+            <h2>Nearby Events</h2>
+
+            <button onclick="findLocation()">
+                Find Nearby Events
+            </button>
+
+            <button onclick="clearPreferences()">
+                Clear Preferences
+            </button>
+
+            <p id="location"></p>
+
+        </section>
+
+        <section>
+
+            <h2>Community News</h2>
+
+            <div class="news">
+
+                Residents can participate in
+                cultural programs, workshops,
+                sports activities and awareness
+                campaigns organized throughout
+                the city. Community events help
+                people interact, learn and
+                contribute positively to society.
+
+                Regular events are conducted by
+                the city council to encourage
+                social engagement and improve
+                community participation.
+
             </div>
-          </div>
-          <div class="col-12">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="newsletter">
-              <label class="form-check-label" for="newsletter">Subscribe to updates</label>
+
+        </section>
+
+        <section>
+
+            <h2>Upcoming Events</h2>
+
+            <div id="eventContainer">
+
             </div>
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary btn-lg">Submit Registration</button>
-            <button type="button" id="clearForm" class="btn btn-outline-secondary">Clear</button>
-          </div>
-        </div>
-      </form>
-      <div id="formResult" class="mt-4"></div>
-    </section>
 
-    <section id="feedback" class="mb-5">
-      <h2 class="text-uppercase">Community Feedback</h2>
-      <div class="row">
-        <div class="col-lg-8">
-          <form id="feedbackForm" class="bg-white p-4 rounded shadow-sm">
-            <div class="mb-3">
-              <label for="comment" class="form-label">Message</label>
-              <textarea id="comment" class="form-control" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-success">Send Feedback</button>
-          </form>
-        </div>
-        <div class="col-lg-4">
-          <div class="p-4 bg-warning bg-gradient rounded shadow-sm text-dark">
-            <h3 class="h5">Feedback</h3>
-            <p class="mb-0">Your comments help improve future community events. Share your experience and ideas for upcoming gatherings.</p>
-          </div>
-        </div>
-      </div>
-      <div id="feedbackReply" class="mt-3"></div>
-    </section>
+        </section>
 
-    <section id="video-section" class="mb-5">
-      <h2 class="text-uppercase">Community Stories</h2>
-      <div class="ratio ratio-16x9">
-        <video controls poster="images/event2.svg" class="w-100 rounded">
-          <source src="videos/community-tour.mp4" type="video/mp4">
-          <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm">
-          <p>Your browser does not support HTML5 video. Visit our support page for more information.</p>
-        </video>
-      </div>
-    </section>
+    </main>
 
-    <section id="map-section" class="mb-5">
-      <h2 class="text-uppercase">Geolocation Section</h2>
-      <p id="locationOutput" class="text-muted mb-3">Click the button to see your approximate location.</p>
-      <button id="locationBtn" class="btn btn-outline-primary mb-3">Get My Location</button>
-      <div id="locationMap"></div>
-    </section>
+    <!-- Footer -->
 
-    <section id="member-tools" class="mb-5">
-      <h2 class="text-uppercase">Member Tools</h2>
-      <p class="text-muted">Save your preferences and quickly restore your details for future events.</p>
-      <div class="d-flex flex-wrap gap-3">
-        <button id="saveStorage" class="btn btn-success">Save favorite event</button>
-        <button id="saveSession" class="btn btn-warning">Save quick note</button>
-        <button id="loadStorage" class="btn btn-info text-white">Load saved details</button>
-      </div>
-      <div id="storageOutput" class="mt-3"></div>
-    </section>
+    <footer id="contact">
 
-    <section id="latest-news" class="mb-5">
-      <h2 class="text-uppercase">Latest Event News</h2>
-      <p class="text-muted">View the latest announcements for upcoming community activities.</p>
-      <button id="spinnerBtn" class="btn btn-outline-secondary">Load Latest News</button>
-      <div id="loadingSpinner" class="spinner-border text-primary d-none" role="status"><span class="visually-hidden">Loading...</span></div>
-      <div id="eventDataOutput" class="mt-3"></div>
-    </section>
+        <h3>Contact Us</h3>
 
-    <section id="schedule-table" class="mb-5">
-      <h2 class="text-uppercase">Event Schedule</h2>
-      <div class="table-responsive">
-        <table class="table table-striped border">
-          <thead class="bg-dark text-white">
-            <tr>
-              <th>Time</th>
-              <th>Activity</th>
-              <th>Location</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>09:00 AM</td>
-              <td>Welcome Ceremony</td>
-              <td>Main Hall</td>
-              <td>Confirmed</td>
-            </tr>
-            <tr>
-              <td>11:00 AM</td>
-              <td>Workshop</td>
-              <td>Room 204</td>
-              <td>Open</td>
-            </tr>
-            <tr>
-              <td>02:00 PM</td>
-              <td>Volunteer Meetup</td>
-              <td>Community Park</td>
-              <td>Full</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+        <p>
+            Email :
+            community@gmail.com
+        </p>
 
-    <section class="mb-5">
-      <h2 class="text-uppercase">Event Highlights</h2>
-      <div class="event-highlights columns">
-        <p>Our portal uses responsive design to highlight community news, event previews, and featured partners.</p>
-        <p>Using <strong>Flexbox</strong> and <strong>Grid</strong>, the site adapts smoothly to desktop and mobile screens.</p>
-        <p>Visit the <a href="help.html">About page</a> for more details about the local event network.</p>
-      </div>
-    </section>
-  </main>
+        <p>
+            Phone :
+            +91 1234567890
+        </p>
 
-  <footer class="bg-dark text-white py-4">
-    <div class="container">
-      <p class="mb-0">&copy; 2026 Local Community Event Portal • Designed for neighborhood connection.</p>
-      <div>
-        <a href="#top-banner" class="btn btn-outline-light btn-sm me-2">Back to top</a>
-        <a href="help.html" class="btn btn-outline-warning btn-sm">Help</a>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="main.js"></script>
+
 </body>
+
 </html>
